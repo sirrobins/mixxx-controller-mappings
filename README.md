@@ -17,44 +17,85 @@ Mixxx Version 2.4.1 https://www.mixxx.org/ and TheNextBeat SX1 https://thenextbe
 ## Install
 
 Place into your Mixxx 'controllers' folder (on macOS under [userhome]/Library/Application Support/Mixxx) - restart Mixxx and activate under Preferences/Controller/TheNextBeat SX1
+#    Led?	Codes:      Button  DECK 		Control(Decimal) 	Control(Hexadecimal)
 
-## NO LED 		midi.sendShortMsg(0x90, 75, 0x7f);  //LoadTr#1 	0x4B
-## NO LED 		midi.sendShortMsg(0x90, 52, 0x7f);  //LoadTr#2 	0x34
-
-## NO LED 		midi.sendShortMsg(0x90, 51, 0x7f);  //SHIFT	#1 	0x33
-## NO LED 		midi.sendShortMsg(0x90, 60, 0x7f);  //SHIFT	#2 	0x3C
-
-##				midi.sendShortMsg(0x90, 13, 0x7f);  //MASTER#M 	0x0D	
-
-##				midi.sendShortMsg(0x90, 59, 0x7f); 	//CUE 	#1	0x3B
-##				midi.sendShortMsg(0x90, 66, 0x7f); 	//CUE 	#2	0x42
+# BORDER
+	LED					//TMPO-	#1 			84  				0x54
+	LED					//TMPO-	#2 			86  				0x56
 		
-##				midi.sendShortMsg(0x90, 67, 0x7f);  //FX 	#1 	0x43
-##				midi.sendShortMsg(0x90, 69, 0x7f);  //FX 	#2 	0x45
-		
-##				midi.sendShortMsg(0x90, 68, 0x7f); 	//SYNC 	#1	0x44
-##				midi.sendShortMsg(0x90, 70, 0x7f); 	//SYNC 	#2	0x46
+	LED				 	//TMPO+	#1			83  				0x53
+	LED				 	//TMPO+	#2			85  				0x55
+	
+	LED				 	//CUE 	#1			59  				0x3B
+	LED				 	//CUE 	#2			66  				0x42
+	
+	LED					//PLAY 	#1 			74  				0x4A
+	LED				 	//PLAY 	#2			76  				0x4C
+	
+	
+#    Led?	Codes:      Button  DECK 		Control(Decimal) 	Control(Hexadecimal)	Comments
+	LED				 	//LOOP+	#1			80  				0x50
+	LED				 	//LOOP+	#2			14  				0x0E
+												
+	LED				 	//ALOOP #1			81  				0x51
+	LED				 	//ALOOP	#2			12  				0x0C
+												
+	LED				 	//LOOP-	#1 			100 				0x64
+	LED				 	//LOOP-	#2			101 				0x65
 
-##				midi.sendShortMsg(0x90, 72, 0x7f); 	//VINYL	#1	0x48
-##				midi.sendShortMsg(0x90, 53, 0x7f); 	//VINYL	#2	0x35
-		
-##				midi.sendShortMsg(0x90, 64, 0x7f); 	//HPHONE#1	0x40
-##				midi.sendShortMsg(0x90, 71, 0x7f); 	//HPHONE#2	0x47
+# CENTRAL	
 
-##				midi.sendShortMsg(0x90, 74, 0x7f);  //PLAY 	#1 	0x4A
-##				midi.sendShortMsg(0x90, 76, 0x7f); 	//PLAY 	#2	0x4C
+	LED				 	//SYNC 	#1			68  				0x44
+	LED				 	//SYNC 	#2			70  				0x46
 		
-##				midi.sendShortMsg(0x90, 84, 0x7f);  //TMPO-	#1 	0x54
-##				midi.sendShortMsg(0x90, 86, 0x7f);  //TMPO-	#2 	0x56
-		
-##				midi.sendShortMsg(0x90, 83, 0x7f); 	//TMPO+	#1	0x53
-##				midi.sendShortMsg(0x90, 85, 0x7f); 	//TMPO+	#2	0x55
+	LED	 				//FXON 	#1			67 					0x43 		
+	LED	 				//FXON 	#2			69 					0x45
+	
+	LED					//PFL	#M 			13  				0x0D			Master Pre Fader Listening: Sends signal from Master output to headphones channel.
+			
+	NO 	 			  	//LoadTR#1 			75  				0x4B
+	NO 	 			  	//LoadTR#2 			52  				0x34
+	
+	LED				 	//VINYLM#1			72  				0x48
+	LED				 	//VINYLM#2			53  				0x35
 
-##				midi.sendShortMsg(0x90, 80, 0x7f); 	//LOOP+	#1	0x50
-##				midi.sendShortMsg(0x90, 14, 0x7f); 	//LOOP+	#2	0x0E
-		
-##				midi.sendShortMsg(0x90, 81, 0x7f); 	//ALOOP #1	0x51
-##				midi.sendShortMsg(0x90, 12, 0x7f); 	//ALOOP	#2	0x0C
+	LED				 	//PFL	#1			64  				0x40			Pre Fader Listening: Send audio signal of Left/Right Deck to the headphones channel.
+	LED				 	//PFL	#2			71  				0x47
 
-##				midi.sendShortMsg(0x90, 100, 0x7f);	//LOOP-	#1 	0x64
-##				midi.sendShortMsg(0x90, 101, 0x7f);	//LOOP-	#2	0x65
+	NO 	 			 	//SHIFT	#1 			51  				0x33
+	NO 	 			 	//SHIFT	#2 			60  				0x3C
+
+
+
+
+
+	
+#   ####  		KNOBS 		 ###
+
+#   LED  				KNOBS			DECK		Control (Decimal)		Control (HEX)
+	NO	 				//FilterFX 		#1 			22						0x16  		
+	NO	 				//FilterFX 		#2 			28						0x1c  
+	
+	NO	 				//EQ High 		#1 									0x10  		High Frequency / Musical Stem.
+	NO	 				//EQ High 		#2 									0x11  	
+	
+	NO	 				//EQ Low 		#1 									0x14  		Low Frequency / Musical Stem.
+	NO	 				//EQ Low 		#2 									0x15  	
+	
+	NO	 				//OutVOLUME		#1 									0x08  		Output Volume.
+	NO	 				//OutVOLUME		#2 									0x09
+
+	NO	 				//MasterGAIN	#Master 							0x08  		Master output volume
+	
+	NO	 				//Crossfader	#Master 							0x0a  		Mixes left and right deck audio.
+
+
+#   ####  		KNOBS 		 ###
+
+#   LED  				KNOBS			DECK		Control (Decimal)		Control (HEX)
+
+	NO	 				//JogWTouch		#1 			22						0x4d  		Touch on jog wheel top surface
+	NO	 				//JogWTouch 	#2 			28						0x4e  
+
+	NO	 				//JogWTurn		#1 			22						0x19  		Jog turn (using jog sides)
+	NO	 				//JogWTurn	 	#2 			28						0x18  
