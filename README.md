@@ -90,9 +90,9 @@ Place into your Mixxx 'controllers' folder (on macOS under [userhome]/Library/Ap
 	NO	 				//Crossfader	#Master 							0x0a  		Mixes left and right deck audio.
 
 
-#   ####  		KNOBS 		 ###
+#   ####  		JOG WHEELS 		 ###
 
-#   LED  				KNOBS			DECK		Control (Decimal)		Control (HEX)
+#   LED  				ACTION			DECK		Control (Decimal)		Control (HEX)
 
 	NO	 				//JogWTouch		#1 			22						0x4d  		Touch on jog wheel top surface
 	NO	 				//JogWTouch 	#2 			28						0x4e  
