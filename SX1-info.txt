@@ -53,7 +53,7 @@ BUTTONS:
 //SHIFT		#1 		NO 	 		51  				0x33
 //SHIFT		#2 		NO 	 		60  				0x3C
 
-
+//SELECT TRACK	#MASTER		NO							0x4F
 
 KNOBS:
 					DECK 		LED? 	Decimal		Control(Hexadecimal)		Comment:
