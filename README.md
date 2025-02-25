@@ -27,7 +27,7 @@ Shift button 1/2 does not change the midi control sent by the main button presse
 BUTTONS:	
 
 		DECK		Led?		Control(Decimal) 	Control(Hexadecimal)	Comment:
-TMPO-		#1 		LED	?		84  				0x54
+//TMPO-		#1 		LED	?		84  				0x54
 //TMPO-		#2 		LED			86  				0x56
 						
 //TMPO+		#1		LED			83  				0x53
