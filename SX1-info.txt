@@ -83,3 +83,5 @@ ACTION			DECK	   LED	Control (Decimal)		Control (HEX)		Comment:
                                   
 //JogWTurn		#1 		NO		22		0x19	  		Jog turn (using jog sides)
 //JogWTurn	 	#2 		NO		28		0x18  
+
+Note: SX1 jogwheel sends around 240 codes per complete turn (360º)
