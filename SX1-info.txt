@@ -1,5 +1,5 @@
 # Controller specs
-SX1 sends 0x90 for push and 0x80 status for all buttons in Deck A/B.
+SX1 sends 0x90 for push and 0x80 status when releasing. ( all buttons in Deck A/B.)
 A different midi control code is sent by each button.
 Shift button 1/2 does not change the midi control sent by the main button pressed.
 
